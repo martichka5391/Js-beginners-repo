@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>typeOf</title>
+   <script type="text/javascript">
+   
+   var shopping_cart = [
+       { product : 'T-shirt' , price : 10 },
+	   { product : 'Jeans' , price : 69.99 },
+	   { product : 'Jacket' , price : 119.99 }
+	];
+	var long_string = '                                                                 '
+	
+	shopping_cart.forEach( function ( item ) {
+         item.price=item.price.toFixed(2);
+		 
+		 console.log(  item.product + long_string.substr(0,65 - item.product.length - item.price.length) + item.price );
+		// console.log(long_string.length);
+      });
+      
+  
+   </script>
+</head>
+<body>
+
+</body>
+</html>
