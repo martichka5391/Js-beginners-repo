@@ -28,24 +28,21 @@
    
 	var storage = {};
 	( function(){
-		var local_key = '';
-		var local_value = '';
-		
+		var data = {};
+
 		storage.set  = function (key , value ) {
-			local_key = key;
-			local_value = value;
-		};
+			data[ key ] = value;
+};
 
 		storage.get  = function (key) {
-			if(local_key == key) {
-				return local_value;
+			/*if(local_key == key) {
+				return data;
 			} else {
 				return undefined;
-			}
+			}*/
+			return data[key]; 
 		};
 	})();
-	   
-   
    
    
    </script>
